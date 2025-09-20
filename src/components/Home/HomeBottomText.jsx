@@ -5,13 +5,13 @@ const HomeBottomText = () => {
   return (
     <div className="font-[font2] flex items-center justify-center text-white gap-10">
       <Link
-        className="text-[8vw] uppercase border-5 rounded-full leading-[7vw] px-8 py-1"
+        className="text-[8vw] hover:text-yellow-300 uppercase border-5 rounded-full leading-[7vw] px-8 py-1"
         to="/projects"
       >
         Projects
       </Link>
       <Link
-        className="text-[8vw] uppercase border-5 rounded-full leading-[7vw]  px-8 py-1"
+        className="text-[8vw] hover:text-yellow-300 uppercase border-5 rounded-full leading-[7vw]  px-8 py-1"
         to="/Agence"
       >
         Agence
