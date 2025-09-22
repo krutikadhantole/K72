@@ -48,16 +48,12 @@ const Agence = () => {
         end: "top -180%",
         scrub: true,
         pin: true,
-        // onUpdate: (elem) => {
-        //   let imageIndex;
-        //   if (elem.progress < 1) {
-        //     imageIndex = Math.floor(elem.progress * imageArray.length);
-        //   } else {
-        //     imageIndex = imageArray.length - 1;
-        //   }
-
-        //   console.log(imageDivRef.current.children[0].src);
-        // },
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        scrub: 1, // smooth scrubing with 1s easing
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
 
         onUpdate: (self) => {
           // Calculate which image to show based on scroll progress
@@ -73,11 +69,11 @@ const Agence = () => {
   });
 
   return (
-    <div>
-      <div className="section-1">
+    <div className="">
+      <div className="section-1 ">
         <div
           ref={imageDivRef}
-          className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-3xl  top-[20vh] left-[30vw]"
+          className="absolute  overflow-hidden h-[20vw] w-[15vw] rounded-3xl  top-[20vh] left-[30vw]"
         >
           <img
             className="h-full w-full object-cover"
